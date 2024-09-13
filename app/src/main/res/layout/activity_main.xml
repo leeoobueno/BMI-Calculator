@@ -48,6 +48,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:hint="Please type your height (e.g., 5'7)" />
+            android:hint="Please type your height (e.g., 1.70)" />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
