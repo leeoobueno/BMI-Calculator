@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">calculadoraimc</string>
+    <string name="a_classifica_o_do_seu_imc">A Classificação do seu IMC é:</string>
+    <string name="confirm_your_result_below">Confirm your result below</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="todo">TODO</string>
+    <string name="your_bmi_classification_is">Your BMI classification is:</string>
 </resources>
