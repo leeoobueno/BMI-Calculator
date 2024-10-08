@@ -7,7 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.content.ContextCompat // Importação necessária para usar ContextCompat
+import androidx.core.content.ContextCompat
 
 
 const val KEY_RESULT_IMC = "ResultActivityKEY_"
@@ -25,7 +25,7 @@ class ResultActivity : AppCompatActivity() {
         }
 
         window.statusBarColor = ContextCompat.getColor(this, R.color.primary_900)
-        /*definindo a cor do status bar*/
+
 
         val result = intent.getFloatExtra(KEY_RESULT_IMC, 0f)
 
@@ -33,34 +33,33 @@ class ResultActivity : AppCompatActivity() {
         val tvClassificacao = findViewById<TextView>(R.id.tv_classificacao)
         tvResult.text = result.toString()
 
-        val color: Int // Variável para armazenar a cor
-        val classificacao: String // Variável para armazenar a classificação
+        val color: Int
+        val classificacao: String
 
-// Definindo a classificação e a cor baseada no resultado do IMC
         when {
             result < 18.5f -> {
                 classificacao = "UNDERWEIGHT"
-                color = ContextCompat.getColor(this, R.color.red) // Vermelho para magreza
+                color = ContextCompat.getColor(this, R.color.red)
             }
 
             result >= 18.5f && result <= 24.9f -> {
                 classificacao = "NORMAL"
-                color = ContextCompat.getColor(this, R.color.green) // Verde para normal
+                color = ContextCompat.getColor(this, R.color.green)
             }
 
             result >= 25f && result <= 29.9f -> {
                 classificacao = "OVERWEIGHT"
-                color = ContextCompat.getColor(this, R.color.yellow) // Amarelo para sobrepeso
+                color = ContextCompat.getColor(this, R.color.yellow)
             }
 
             result >= 30f && result <= 39.9f -> {
                 classificacao = "OBESITY"
-                color = ContextCompat.getColor(this, R.color.red) // Vermelho para obesidade
+                color = ContextCompat.getColor(this, R.color.red)
             }
 
             else -> {
                 classificacao = "MORBID OBESITY"
-                color = ContextCompat.getColor(this, R.color.red) // Vermelho para obesidade grave
+                color = ContextCompat.getColor(this, R.color.red)
             }
         }
 
