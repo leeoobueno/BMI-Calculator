@@ -1,19 +1,34 @@
-# Calculadora IMC
-Desc
+# BMI Calculator
+This is a simple BMI (Body Mass Index) calculator app developed using Kotlin for Android. The app allows users to input their weight and height to calculate their BMI and receive a health classification based on the result.
+
+
 
 ## :camera_flash: Screenshots
-<!-- You can add more screenshots here if you like -->
-Screenshots
+<img src="https://github.com/user-attachments/assets/d3342b72-86be-4355-acee-81174b887910" width=200/> <img src="https://github.com/user-attachments/assets/9de034d5-93b6-4f1e-94a9-c473e1ef2841" width=200/>
 
-## Tecnologias
-Techs
+
+
+
+
+## Technologies Used
+- Activity
+- Intent
+- Snackbar
+- ViewGroups
+  - LinearLayout
+  - ConstraintLayout
+- Views
+- ImageViews
+- TextView
+- EditText
+- Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Leonardo Bueno Velho
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
